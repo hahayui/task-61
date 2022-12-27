@@ -89,5 +89,15 @@
         </div>
       </div>
     </div>
+    <script>
+      const allHotPrices = document.getElementsByClassName("hot");
+      
+      for (let index = 0; index < allHotPrices.length; ) {
+        
+        allHotPrices[index].innerHTML = allHotPrices[index].innerHTML + "🔥";
+
+        index++
+      }
+    </script>
   </body>
 </html>
