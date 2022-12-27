@@ -1,5 +1,13 @@
 import "../scss/app.scss";
 
 window.addEventListener("DOMContentLoaded", () => {
-  // This block will be executed once the page is loaded and ready
+  
+  const allHotPrices = document.querySelectorAll(".hot");
+  
+  for (let index = 0; index < allHotPrices.length; ) {
+    
+    allHotPrices[index].innerHTML = allHotPrices[index].innerHTML + "🔥";
+
+    index++
+  }
 });
